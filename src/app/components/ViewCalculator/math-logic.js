@@ -16,6 +16,19 @@ export const calculateLogic = (number) => {
   operations.forEach((opr, idx) => {
     const nextArg = Number(arrayNumbers[idx + 1] || 0)
     switch (opr) {
+      case MATH_OPERATIONS.EXP:
+        if (prevArg === 0 || nextArg === 0) {
+          prevArg = 0
+        } else {
+          let loopIdx = 1
+          let updatedValue = prevArg
+          while (loopIdx < nextArg) {
+            updatedValue *= prevArg
+            loopIdx += 1
+          }
+          prevArg = updatedValue
+        }
+        break
       case MATH_OPERATIONS.DIV:
         if (prevArg === 0 || nextArg === 0) {
           prevArg = 0

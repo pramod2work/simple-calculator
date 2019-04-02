@@ -30,4 +30,12 @@ describe('calculator core logic', () => {
   test('Division Logic for infinity', () => {
     expect(calculateLogic('6/0')).toBe(0)
   })
+
+  test('Exponent Logic', () => {
+    expect(calculateLogic('3^3')).toBe(27)
+  })
+
+  test('Exponent Logic for 0', () => {
+    expect(calculateLogic('6^0')).toBe(0)
+  })
 })

@@ -50,12 +50,17 @@ exports[`<CalculatorKeyPad /> Shallow Rendering snapshot test 1`] = `
       />
     </styled.div>
     <styled.div
-      key="seq-blank-3"
+      key="seq-^"
     >
-      <Styled(styled.div)
-        data-test-id="key-blank"
+      <styled.button
+        data-test-id="key-^"
         isLast={true}
-      />
+        onClick={[Function]}
+      >
+        <span>
+          ^
+        </span>
+      </styled.button>
     </styled.div>
   </styled.div>
   <styled.div

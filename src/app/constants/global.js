@@ -4,5 +4,6 @@ export const MATH_OPERATIONS = Object.freeze({
   SUB: '-',
   MUL: '*',
   DIV: '/',
+  EXP: '^', // exponents means power
   DISPLAY: '='
 })

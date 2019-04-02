@@ -31,7 +31,7 @@ export const keypadSequence = [
       { keyId: 'seq-delete', delete: true, displayName: 'D' },
       { keyId: 'seq-blank-1', blank: true },
       { keyId: 'seq-blank-2', blank: true },
-      { keyId: 'seq-blank-3', blank: true }
+      { keyId: `seq-${MATH_OPERATIONS.EXP}`, displayName: MATH_OPERATIONS.EXP, value: MATH_OPERATIONS.EXP }
     ]
   },
   {
